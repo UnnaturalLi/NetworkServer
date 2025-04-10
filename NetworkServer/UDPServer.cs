@@ -204,15 +204,13 @@ public class UDPServer : ServerBase
     protected override void Update(double deltaTime)
     {
         base.Update(deltaTime);
-        
+        Console.WriteLine("in");
     }
-
     protected override void Close()
     {
         base.Close();
-        
         server.Close();
-        Console.WriteLine("close");
+        Console.WriteLine("Server Close");
         
     }
 }
