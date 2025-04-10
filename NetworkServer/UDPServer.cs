@@ -23,8 +23,9 @@ public class UDPClient
         }
     }
 }
-public class UDPServer : ServerBase
+public class UDPServer
 {
+    protected bool _isRunning;
     Thread listenThread;
     Dictionary<string, UDPClient> clients = new Dictionary<string, UDPClient>();
     public UdpClient server;
@@ -180,9 +181,13 @@ public class UDPServer : ServerBase
         }
     }
 
-    protected override void Init()
+    public void Run()
     {
-        base.Init();
+        Init();
+        Start();
+    }
+    protected  void Init()
+    {
         string hostName = Dns.GetHostName();
         IPAddress[] localIPs = Dns.GetHostAddresses(hostName);
         ip = localIPs.FirstOrDefault(ip => ip.AddressFamily == AddressFamily.InterNetwork);
@@ -193,24 +198,21 @@ public class UDPServer : ServerBase
         int port = 12345; 
         server = new UdpClient(new IPEndPoint(ip, port));
         Console.WriteLine(ip + ":" + port);
+        Console.CancelKeyPress += (sender, e) =>
+        {
+            e.Cancel = true; // 阻止进程直接退出
+            Close();
+        };
     }
 
-    protected override void Start()
+    protected void Start()
     {
-        base.Start();
         listenThread = new Thread(listenThreadFunc);
     }
-
-    protected override void Update(double deltaTime)
+    protected void Close()
     {
-        base.Update(deltaTime);
-        Console.WriteLine("in");
-    }
-    protected override void Close()
-    {
-        base.Close();
         server.Close();
+        _isRunning = false;
         Console.WriteLine("Server Close");
-        
     }
 }
