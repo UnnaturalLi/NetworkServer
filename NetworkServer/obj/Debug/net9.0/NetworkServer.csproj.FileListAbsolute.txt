@@ -1,0 +1,14 @@
+/Users/lixiang/Documents/Unity/NetWorkServer/NetworkServer/NetworkServer/bin/Debug/net9.0/NetworkServer
+/Users/lixiang/Documents/Unity/NetWorkServer/NetworkServer/NetworkServer/bin/Debug/net9.0/NetworkServer.deps.json
+/Users/lixiang/Documents/Unity/NetWorkServer/NetworkServer/NetworkServer/bin/Debug/net9.0/NetworkServer.runtimeconfig.json
+/Users/lixiang/Documents/Unity/NetWorkServer/NetworkServer/NetworkServer/bin/Debug/net9.0/NetworkServer.dll
+/Users/lixiang/Documents/Unity/NetWorkServer/NetworkServer/NetworkServer/bin/Debug/net9.0/NetworkServer.pdb
+/Users/lixiang/Documents/Unity/NetWorkServer/NetworkServer/NetworkServer/obj/Debug/net9.0/NetworkServer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lixiang/Documents/Unity/NetWorkServer/NetworkServer/NetworkServer/obj/Debug/net9.0/NetworkServer.AssemblyInfoInputs.cache
+/Users/lixiang/Documents/Unity/NetWorkServer/NetworkServer/NetworkServer/obj/Debug/net9.0/NetworkServer.AssemblyInfo.cs
+/Users/lixiang/Documents/Unity/NetWorkServer/NetworkServer/NetworkServer/obj/Debug/net9.0/NetworkServer.csproj.CoreCompileInputs.cache
+/Users/lixiang/Documents/Unity/NetWorkServer/NetworkServer/NetworkServer/obj/Debug/net9.0/NetworkServer.dll
+/Users/lixiang/Documents/Unity/NetWorkServer/NetworkServer/NetworkServer/obj/Debug/net9.0/refint/NetworkServer.dll
+/Users/lixiang/Documents/Unity/NetWorkServer/NetworkServer/NetworkServer/obj/Debug/net9.0/NetworkServer.pdb
+/Users/lixiang/Documents/Unity/NetWorkServer/NetworkServer/NetworkServer/obj/Debug/net9.0/NetworkServer.genruntimeconfig.cache
+/Users/lixiang/Documents/Unity/NetWorkServer/NetworkServer/NetworkServer/obj/Debug/net9.0/ref/NetworkServer.dll
