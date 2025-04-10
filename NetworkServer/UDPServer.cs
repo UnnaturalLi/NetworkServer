@@ -9,7 +9,6 @@ public struct UDPPacket
 }
 public class UDPClient
 {
-    
     public Thread sendThread;
     public IPEndPoint ipPort;
     public AutoResetEvent SendDataSignal;
