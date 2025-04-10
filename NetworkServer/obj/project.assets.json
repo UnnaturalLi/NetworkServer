@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/lixiang/Documents/Unity/NetWorkServer/NetworkServer/NetworkServer/NetworkServer.csproj",
+      "projectUniqueName": "/Users/lixiang/Documents/Unity/networkserver/NetworkServer/NetworkServer.csproj",
       "projectName": "NetworkServer",
-      "projectPath": "/Users/lixiang/Documents/Unity/NetWorkServer/NetworkServer/NetworkServer/NetworkServer.csproj",
+      "projectPath": "/Users/lixiang/Documents/Unity/networkserver/NetworkServer/NetworkServer.csproj",
       "packagesPath": "/Users/lixiang/.nuget/packages/",
-      "outputPath": "/Users/lixiang/Documents/Unity/NetWorkServer/NetworkServer/NetworkServer/obj/",
+      "outputPath": "/Users/lixiang/Documents/Unity/networkserver/NetworkServer/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/lixiang/.nuget/NuGet/NuGet.Config"
@@ -42,9 +42,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
+        "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -65,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/Users/lixiang/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/Users/lixiang/.dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
