@@ -85,6 +85,10 @@ public class UDPServer
                 return;
             }
             clientInfo.SendDataSignal.WaitOne();
+            if (!_isRunning)
+            {
+                return;
+            }
             try
             {
                 lock (clientInfo.PendingSendData)
@@ -198,21 +202,40 @@ public class UDPServer
         int port = 12345; 
         server = new UdpClient(new IPEndPoint(ip, port));
         Console.WriteLine(ip + ":" + port);
-        Console.CancelKeyPress += (sender, e) =>
-        {
-            e.Cancel = true; // 阻止进程直接退出
-            Close();
-        };
     }
 
     protected void Start()
     {
         listenThread = new Thread(listenThreadFunc);
     }
-    protected void Close()
+    public void Close()
     {
-        server.Close();
         _isRunning = false;
-        Console.WriteLine("Server Close");
+        if (listenThread != null)
+        {
+            listenThread.Join(500);
+            listenThread.Abort();
+            listenThread = null;
+        }
+        lock (clients)
+        {
+            foreach (var pair in clients)
+            {
+                var client = pair.Value;
+                client.SendDataSignal.Set();
+                if (client != null)
+                {
+                    client.sendThread.Join(500);
+                    client.sendThread.Abort();
+                    client.sendThread = null;
+                }
+            }
+        }
+        if (server != null)
+        {
+            server.Close();
+            server = null;
+        }
+        Console.WriteLine("\nServer Close");
     }
 }

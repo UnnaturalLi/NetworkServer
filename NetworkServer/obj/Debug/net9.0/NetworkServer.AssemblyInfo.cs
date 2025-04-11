@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NetworkServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3217d656a2e69cf5cd28e3c61e911de0a185f55f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4242436578acd45ee1189f69e199f9f7510ef27b")]
 [assembly: System.Reflection.AssemblyProductAttribute("NetworkServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NetworkServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

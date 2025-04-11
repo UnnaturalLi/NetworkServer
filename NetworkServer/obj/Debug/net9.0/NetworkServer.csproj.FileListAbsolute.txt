@@ -27,3 +27,4 @@
 /Users/lixiang/Documents/Unity/networkserver/NetworkServer/obj/Debug/net9.0/NetworkServer.pdb
 /Users/lixiang/Documents/Unity/networkserver/NetworkServer/obj/Debug/net9.0/NetworkServer.genruntimeconfig.cache
 /Users/lixiang/Documents/Unity/networkserver/NetworkServer/obj/Debug/net9.0/ref/NetworkServer.dll
+/Users/lixiang/Documents/Unity/NetWorkServer/NetworkServer/NetworkServer/obj/Debug/net9.0/NetworkServer.sourcelink.json
